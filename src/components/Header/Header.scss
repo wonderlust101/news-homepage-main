@@ -1,0 +1,28 @@
+.header {
+  &__content {
+    grid-area: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.75rem 0;
+    
+    @include breakpoint(medium) {
+      padding: 5.5rem 0 3.5rem;
+    }
+  }
+  
+  &__links {
+    display: flex;
+    //display: none;
+    gap: 2.5rem;
+    list-style: none;
+  }
+  
+  &__link {
+    color: $clr-black;
+    
+    &:hover {
+      color: $clr-primary-color-orange;
+    }
+  }
+}

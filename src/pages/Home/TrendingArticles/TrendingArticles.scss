@@ -1,0 +1,66 @@
+.trending-articles {
+  display: grid;
+
+  @include breakpoint(medium) {
+    grid-area: 2/1 / 2 / 3;
+  }
+
+  &__articles {
+    display: grid;
+    gap: 2rem;
+
+    @include breakpoint(medium) {
+      grid-template: 1fr / repeat(3, 1fr);
+    }
+  }
+
+  &__article {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    gap: 1.5rem;
+    
+    @include breakpoint(medium) {
+      grid-template: 1fr 1fr / 1fr;
+    }
+    
+    @include breakpoint(large) {
+      grid-template-columns: 35% 1fr;
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  &__article-text {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    align-content: flex-start;
+
+    @include breakpoint(medium) {
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    
+    @include breakpoint(medium) {
+      
+    }
+  }
+
+  &__article-index {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $clr-primary-color-orange;
+  }
+
+  &__article-title {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: $clr-black;
+    width: max-content;
+
+    &:hover {
+      color: $clr-primary-color-orange;
+    }
+  }
+}

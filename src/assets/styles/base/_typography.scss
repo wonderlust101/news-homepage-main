@@ -1,6 +1,26 @@
 @use '../abstract/index' as a;
 
 h1, h2, h3, h4,
-h5, h6, p {
+h5, h6, p, a, button {
+  font-family: 'Inter', sans-serif;
+}
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  @include a.breakpoint(medium) {
+    font-size: 3.5rem;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: a.$clr-gunmetal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

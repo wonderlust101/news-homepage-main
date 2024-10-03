@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Reviving Retro PCs",
+    "preview": "What happens when old PCs are given modern upgrades?",
+    "imageSrc": "./images/image-retro-pcs.jpg"
+  },
+  {
+    "title": "Top 10 Laptops of 2022",
+    "preview": "Our best picks for various needs and budgets.",
+    "imageSrc": "./images/image-top-laptops.jpg"
+
+  },
+  {
+    "title": "The Growth of Gaming",
+    "preview": "How the pandemic has sparked fresh opportunities.",
+    "imageSrc": "./images/image-gaming-growth.jpg"
+
+  }
+]

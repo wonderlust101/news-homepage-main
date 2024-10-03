@@ -1,0 +1,17 @@
+.home {
+  background-color: $clr-white;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+  
+  &__content {
+    grid-area: 2/2;
+    display: grid;
+    row-gap: 4rem;
+    
+    @include breakpoint(medium) {
+      grid-template: max-content max-content / 1fr 35%;
+      align-items: flex-start;
+      column-gap: 2rem;
+    }
+  }
+}
