@@ -18,7 +18,7 @@ export default function NewArticles() {
                             <p className="new-articles__article-preview">{newArticle.preview}</p>
                         </article>
 
-                        {index !== newArticles.length - 1 ? <hr/> : null}
+                        {index !== newArticles.length - 1 ? <hr className='new-articles__divider'/> : null}
                     </li>
                 ))}
             </ul>
