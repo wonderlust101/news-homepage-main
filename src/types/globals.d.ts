@@ -10,6 +10,11 @@ declare global {
         preview: string;
         imageSrc: string;
     }
+
+    type link = {
+        title: string;
+        href: string;
+    }
 }
 
 export {};

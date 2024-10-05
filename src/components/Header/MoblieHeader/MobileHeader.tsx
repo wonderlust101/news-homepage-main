@@ -4,11 +4,6 @@ import menuIcon from "/images/icon-menu.svg";
 import closeIcon from "/images/icon-menu-close.svg";
 import "./MobileHeader.scss";
 
-type link = {
-    title: string;
-    href: string;
-}
-
 type mobileHeaderHeader = {
     links: link[];
 }
@@ -61,8 +56,8 @@ export default function MobileHeader({links}: mobileHeaderHeader) {
                         className="mobile-header__modal"
                     >
                         <ul className="mobile-header__links">
-                            {links.map((link, index) => (
-                                <li>
+                            {links.map((link) => (
+                                <li key={link.title}>
                                     <a className='mobile-header__link' href="#" aria-label={`Go to ${link.title} Page`}>{link.title}</a>
                                 </li>
                             ))}

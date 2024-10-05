@@ -1,5 +1,6 @@
 .trending-articles {
   display: grid;
+  margin-bottom: 5rem;
 
   @include breakpoint(medium) {
     grid-area: 2/1 / 2 / 3;

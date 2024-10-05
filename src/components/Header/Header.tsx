@@ -6,11 +6,6 @@ import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import "./Header.scss";
 
-type link = {
-    title: string;
-    href: string;
-}
-
 const links: link[] = [
     {
         "title": "Home",
