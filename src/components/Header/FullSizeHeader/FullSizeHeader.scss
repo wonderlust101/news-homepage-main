@@ -1,0 +1,15 @@
+.full-sized-header {
+  &__links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+
+  &__link {
+    color: $clr-black;
+
+    &:hover {
+      color: $clr-primary-color-orange;
+    }
+  }
+}

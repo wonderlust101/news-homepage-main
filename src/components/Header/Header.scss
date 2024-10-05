@@ -10,19 +10,4 @@
       padding: 5.5rem 0 3.5rem;
     }
   }
-  
-  &__links {
-    display: flex;
-    //display: none;
-    gap: 2.5rem;
-    list-style: none;
-  }
-  
-  &__link {
-    color: $clr-black;
-    
-    &:hover {
-      color: $clr-primary-color-orange;
-    }
-  }
 }

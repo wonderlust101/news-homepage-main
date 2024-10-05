@@ -5,6 +5,7 @@ import NewArticles from "./NewArticles/";
 import TrendingArticles from "./TrendingArticles/";
 
 export default function Home() {
+
     return (
         <div className="home">
             <Header/>

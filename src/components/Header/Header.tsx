@@ -1,5 +1,9 @@
 import logo from "/images/logo.svg";
 
+import FullSizeHeader from "./FullSizeHeader";
+import MobileHeader from "./MoblieHeader";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
+
 import "./Header.scss";
 
 type link = {
@@ -31,23 +35,18 @@ const links: link[] = [
 ];
 
 export default function Header() {
-
+    const {width} = useWindowDimensions();
+    
     return (
         <header className="header grid-bleed">
             <div className="header__content">
                 <img className="header__logo" src={logo} alt="W Logo"/>
 
-                <nav>
-                    <ul className="header__links">
-                        {links.map((link) => (
-                            <li key={link.title}>
-                                <a className="header__link" href={link.href} aria-label={`Go to ${link.title} page`}>
-                                    {link.title}
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
+                {width >= 768 ? (
+                    <FullSizeHeader links={links}/>
+                ) : (
+                    <MobileHeader links={links}></MobileHeader>
+                )}
             </div>
         </header>
     );

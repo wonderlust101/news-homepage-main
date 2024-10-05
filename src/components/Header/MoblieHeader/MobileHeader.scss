@@ -1,0 +1,48 @@
+.mobile-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+
+  &__menu-icon {
+    z-index: 2;
+  }
+
+  &__modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  &__modal {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    padding: 9rem 1.5rem 0;
+    background-color: $clr-white;
+    transform: translate(-50%);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.24);
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: $clr-black;
+  }
+}
